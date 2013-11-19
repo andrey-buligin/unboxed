@@ -1,0 +1,18 @@
+{
+  "name": "unboxed",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "backbone-amd": "~1.1.0",
+    "underscore-amd": "~1.5.2",
+    "require-handlebars-plugin": "~0.4.0",
+    "bootstrap-sass": "~3.0.2",
+    "requirejs-text": "~2.0.10",
+    "requirejs": "~2.1.9",
+    "modernizr": "~2.7.0"
+  }
+}

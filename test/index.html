@@ -1,0 +1,65 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Mocha Spec Runner</title>
+  <link rel="stylesheet" href="lib/mocha/mocha.css">
+</head>
+<body>
+  <div id="mocha"></div>
+  <script src="lib/mocha/mocha.js"></script>
+  <script>mocha.setup('bdd')</script>
+
+  <!-- assertion framework -->
+  
+  <script src="lib/chai.js"></script>
+  <script>expect = chai.expect</script>
+  <!-- -->
+
+  <script data-main="runner/tests.js" src="../app/scripts/vendor/require.js"></script>
+
+  <!-- include spec files here... -->
+  <script>
+  // replace this by your own specs
+  (function() {
+    describe('App', function() {
+      describe('user check form', function() {
+
+        it('should enabled "submit" button only if username field is filled in', function() {
+
+        });
+
+        it('should display error if user is not found', function() {
+
+        });
+
+        it('should hide error when user starts type in input field', function() {
+
+        });
+
+      });
+
+      describe('repositories analysis', function() {
+
+        it('should display notification if user does not have public repositories', function() {
+
+        });
+
+        it('should display notification if languages are empty for all his public repositories', function() {
+
+        });
+
+        it('should display common language among users public repositories', function() {
+
+        });
+
+      });
+    });
+  })();
+  </script>
+
+  <!-- trigger the mocha runner -->
+  <script src="runner/mocha.js"></script>
+
+</body>
+</html>
