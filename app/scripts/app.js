@@ -28,6 +28,7 @@ require([
                     _.each(langsCount, function(count, lang){
                         if (count > maxCount) {
                             mostPopularLanguage = lang;
+                            maxCount = count;
                         }
                     });
                 }
